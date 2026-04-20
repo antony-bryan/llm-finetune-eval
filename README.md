@@ -1,3 +1,5 @@
+
+
 # LLM Fine-Tuning + Evaluation Pipeline
 
 Fine-tuning `microsoft/phi-2` on SQL generation using QLoRA, with a full evaluation harness comparing base vs fine-tuned performance.
@@ -12,18 +14,19 @@ Fine-tuning `microsoft/phi-2` on SQL generation using QLoRA, with a full evaluat
 | Dataset | [b-mc2/sql-create-context](https://huggingface.co/datasets/b-mc2/sql-create-context) |
 | Method | QLoRA (4-bit NF4 + LoRA r=16) |
 | Hardware | Kaggle T4 x2 (free tier) |
-| Fine-tuned adapter | [antony-bryan-3D2Y/phi2-sql-lora](https://huggingface.co/antony-bryan-3D2Y/phi2-sql-lora) |
+| Fine-tuned adapter (Run 1, lr=2e-4) | [antony-bryan-3D2Y/phi2-sql-lora-lr2e4](https://huggingface.co/antony-bryan-3D2Y/phi2-sql-lora-lr2e4) |
+| Fine-tuned adapter (Run 2, lr=5e-4) | [antony-bryan-3D2Y/phi2-sql-lora-lr5e4](https://huggingface.co/antony-bryan-3D2Y/phi2-sql-lora-lr5e4) |
 | W&B training runs | [phi2-sql-finetune](https://wandb.ai/antonybryan2-00-anthropic/phi2-sql-finetune) |
 
 ## Results
 
 ![Results Chart](results/charts/results_comparison.png)
 
-| Model | Exact Match | ROUGE-L | Δ vs Base |
-|---|---|---|---|
-| Phi-2 Base | 2.0% | 0.886 | — |
-| Phi-2 + LoRA Run 1 (lr=2e-4) | **76.0%** | **0.9903** | **+74pp** |
-| Phi-2 + LoRA Run 2 (lr=5e-4) | 70.0% | 0.9825 | +68pp |
+| Model | Exact Match | ROUGE-L | Δ vs Base | Adapter |
+|---|---|---|---|---|
+| Phi-2 Base | 2.0% | 0.886 | — | — |
+| Phi-2 + LoRA Run 1 (lr=2e-4) | **76.0%** | **0.9903** | **+74pp** | [phi2-sql-lora-lr2e4](https://huggingface.co/antony-bryan-3D2Y/phi2-sql-lora-lr2e4) |
+| Phi-2 + LoRA Run 2 (lr=5e-4) | 70.0% | 0.9825 | +68pp | [phi2-sql-lora-lr5e4](https://huggingface.co/antony-bryan-3D2Y/phi2-sql-lora-lr5e4) |
 
 Evaluated on 50 held-out samples from sql-create-context (seed=42).
 
@@ -56,6 +59,7 @@ llm-finetune-eval/
 │   └── phi2-sql-finetune.ipynb
 ├── results/
 │   ├── baseline_results.csv
+│   ├── baseline_test_samples.csv
 │   ├── predictions_base.csv
 │   ├── predictions_run1.csv
 │   ├── predictions_run2.csv
@@ -91,3 +95,6 @@ llm-finetune-eval/
 | bitsandbytes | 0.49.2 |
 
 Trained on Kaggle free tier (T4 x2, CUDA 12.8, Python 3.12).
+
+
+
