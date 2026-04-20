@@ -1,0 +1,401 @@
+index,question,context,answer,prompt
+0,Tell me the height which has a surpassed by of book tower,"CREATE TABLE table_name_2 (height_feet_m VARCHAR, surpassed_by VARCHAR)","SELECT height_feet_m FROM table_name_2 WHERE surpassed_by = ""book tower""","### SQL Schema:
+CREATE TABLE table_name_2 (height_feet_m VARCHAR, surpassed_by VARCHAR)
+
+### Question:
+Tell me the height which has a surpassed by of book tower
+
+### SQL Query:
+"
+1,"Who is the h.h. principal with Jim Haught as h.s. principal, Charlie Taylor as maplemere principal, and Rich Auerbach as w.r. principal?","CREATE TABLE table_name_55 (hh_principal VARCHAR, wr_principal VARCHAR, hs_principal VARCHAR, maplemere_principal VARCHAR)","SELECT hh_principal FROM table_name_55 WHERE hs_principal = ""jim haught"" AND maplemere_principal = ""charlie taylor"" AND wr_principal = ""rich auerbach""","### SQL Schema:
+CREATE TABLE table_name_55 (hh_principal VARCHAR, wr_principal VARCHAR, hs_principal VARCHAR, maplemere_principal VARCHAR)
+
+### Question:
+Who is the h.h. principal with Jim Haught as h.s. principal, Charlie Taylor as maplemere principal, and Rich Auerbach as w.r. principal?
+
+### SQL Query:
+"
+2,What is the original air date for the episode written by Bob Goodman?,"CREATE TABLE table_16581695_2 (original_airdate VARCHAR, written_by VARCHAR)","SELECT original_airdate FROM table_16581695_2 WHERE written_by = ""Bob Goodman""","### SQL Schema:
+CREATE TABLE table_16581695_2 (original_airdate VARCHAR, written_by VARCHAR)
+
+### Question:
+What is the original air date for the episode written by Bob Goodman?
+
+### SQL Query:
+"
+3,"Which election has a conservative first party, Rowland Smith as first member, and Sir Henry Wilmot, Bt as second member?","CREATE TABLE table_name_11 (election VARCHAR, second_member VARCHAR, first_party VARCHAR, first_member VARCHAR)","SELECT election FROM table_name_11 WHERE first_party = ""conservative"" AND first_member = ""rowland smith"" AND second_member = ""sir henry wilmot, bt""","### SQL Schema:
+CREATE TABLE table_name_11 (election VARCHAR, second_member VARCHAR, first_party VARCHAR, first_member VARCHAR)
+
+### Question:
+Which election has a conservative first party, Rowland Smith as first member, and Sir Henry Wilmot, Bt as second member?
+
+### SQL Query:
+"
+4,"If the Season is later than 2008 and Races is 11, what ate the Points?","CREATE TABLE table_name_64 (points VARCHAR, races VARCHAR, season VARCHAR)","SELECT points FROM table_name_64 WHERE races = ""11"" AND season > 2008","### SQL Schema:
+CREATE TABLE table_name_64 (points VARCHAR, races VARCHAR, season VARCHAR)
+
+### Question:
+If the Season is later than 2008 and Races is 11, what ate the Points?
+
+### SQL Query:
+"
+5,"What television service has italian as the language, and sky famiglia as the package option?","CREATE TABLE table_name_20 (television_service VARCHAR, language VARCHAR, package_option VARCHAR)","SELECT television_service FROM table_name_20 WHERE language = ""italian"" AND package_option = ""sky famiglia""","### SQL Schema:
+CREATE TABLE table_name_20 (television_service VARCHAR, language VARCHAR, package_option VARCHAR)
+
+### Question:
+What television service has italian as the language, and sky famiglia as the package option?
+
+### SQL Query:
+"
+6,What is the highest NGC number that has a Declination ( J2000 ) of °04′58″ and a Apparent magnitude larger than 7.3?,"CREATE TABLE table_name_5 (ngc_number INTEGER, declination___j2000__ VARCHAR, apparent_magnitude VARCHAR)","SELECT MAX(ngc_number) FROM table_name_5 WHERE declination___j2000__ = ""°04′58″"" AND apparent_magnitude > 7.3","### SQL Schema:
+CREATE TABLE table_name_5 (ngc_number INTEGER, declination___j2000__ VARCHAR, apparent_magnitude VARCHAR)
+
+### Question:
+What is the highest NGC number that has a Declination ( J2000 ) of °04′58″ and a Apparent magnitude larger than 7.3?
+
+### SQL Query:
+"
+7,which Points has Wins smaller than 2?,"CREATE TABLE table_name_41 (points INTEGER, wins INTEGER)",SELECT MIN(points) FROM table_name_41 WHERE wins < 2,"### SQL Schema:
+CREATE TABLE table_name_41 (points INTEGER, wins INTEGER)
+
+### Question:
+which Points has Wins smaller than 2?
+
+### SQL Query:
+"
+8,What Gold has the Year of 1994?,"CREATE TABLE table_name_68 (gold VARCHAR, year VARCHAR)",SELECT gold FROM table_name_68 WHERE year = 1994,"### SQL Schema:
+CREATE TABLE table_name_68 (gold VARCHAR, year VARCHAR)
+
+### Question:
+What Gold has the Year of 1994?
+
+### SQL Query:
+"
+9,Total number of laps at a time of +56.977?,"CREATE TABLE table_name_31 (laps VARCHAR, time VARCHAR)","SELECT COUNT(laps) FROM table_name_31 WHERE time = ""+56.977""","### SQL Schema:
+CREATE TABLE table_name_31 (laps VARCHAR, time VARCHAR)
+
+### Question:
+Total number of laps at a time of +56.977?
+
+### SQL Query:
+"
+10,How old was the conservative party member that left the house in 2001?,"CREATE TABLE table_name_43 (age_on_leaving VARCHAR, political_party VARCHAR, left_house VARCHAR)","SELECT age_on_leaving FROM table_name_43 WHERE political_party = ""conservative"" AND left_house = ""2001""","### SQL Schema:
+CREATE TABLE table_name_43 (age_on_leaving VARCHAR, political_party VARCHAR, left_house VARCHAR)
+
+### Question:
+How old was the conservative party member that left the house in 2001?
+
+### SQL Query:
+"
+11,Who is the home team when Sheffield United is the away team?,"CREATE TABLE table_name_38 (home_team VARCHAR, away_team VARCHAR)","SELECT home_team FROM table_name_38 WHERE away_team = ""sheffield united""","### SQL Schema:
+CREATE TABLE table_name_38 (home_team VARCHAR, away_team VARCHAR)
+
+### Question:
+Who is the home team when Sheffield United is the away team?
+
+### SQL Query:
+"
+12,What position did Lee Gilmour play while having more than 4 Tries and 20 points?,"CREATE TABLE table_name_58 (position VARCHAR, player VARCHAR, tries VARCHAR, points VARCHAR)","SELECT position FROM table_name_58 WHERE tries > 4 AND points = 20 AND player = ""lee gilmour""","### SQL Schema:
+CREATE TABLE table_name_58 (position VARCHAR, player VARCHAR, tries VARCHAR, points VARCHAR)
+
+### Question:
+What position did Lee Gilmour play while having more than 4 Tries and 20 points?
+
+### SQL Query:
+"
+13,What tournament that Fernando Roca is the runner-up?,"CREATE TABLE table_name_14 (tournament VARCHAR, runner_s__up VARCHAR)","SELECT tournament FROM table_name_14 WHERE runner_s__up = ""fernando roca""","### SQL Schema:
+CREATE TABLE table_name_14 (tournament VARCHAR, runner_s__up VARCHAR)
+
+### Question:
+What tournament that Fernando Roca is the runner-up?
+
+### SQL Query:
+"
+14,"What is Score, when Game is greater than 78, and when Date is ""4""?","CREATE TABLE table_name_31 (score VARCHAR, game VARCHAR, date VARCHAR)",SELECT score FROM table_name_31 WHERE game > 78 AND date = 4,"### SQL Schema:
+CREATE TABLE table_name_31 (score VARCHAR, game VARCHAR, date VARCHAR)
+
+### Question:
+What is Score, when Game is greater than 78, and when Date is ""4""?
+
+### SQL Query:
+"
+15,What is the name of the school/s in North Manchester?,"CREATE TABLE table_1984697_85 (school VARCHAR, city___town VARCHAR)","SELECT school FROM table_1984697_85 WHERE city___town = ""North Manchester""","### SQL Schema:
+CREATE TABLE table_1984697_85 (school VARCHAR, city___town VARCHAR)
+
+### Question:
+What is the name of the school/s in North Manchester?
+
+### SQL Query:
+"
+16,"What was the team's record at the game attended by 30,452?","CREATE TABLE table_name_22 (record VARCHAR, attendance VARCHAR)","SELECT record FROM table_name_22 WHERE attendance = ""30,452""","### SQL Schema:
+CREATE TABLE table_name_22 (record VARCHAR, attendance VARCHAR)
+
+### Question:
+What was the team's record at the game attended by 30,452?
+
+### SQL Query:
+"
+17,Name the candidates  in 1964,"CREATE TABLE table_1341586_43 (candidates VARCHAR, first_elected VARCHAR)",SELECT candidates FROM table_1341586_43 WHERE first_elected = 1964,"### SQL Schema:
+CREATE TABLE table_1341586_43 (candidates VARCHAR, first_elected VARCHAR)
+
+### Question:
+Name the candidates  in 1964
+
+### SQL Query:
+"
+18,Who was eliminated a person at 18:48?,"CREATE TABLE table_29692554_2 (eliminated VARCHAR, time VARCHAR)","SELECT eliminated AS by FROM table_29692554_2 WHERE time = ""18:48""","### SQL Schema:
+CREATE TABLE table_29692554_2 (eliminated VARCHAR, time VARCHAR)
+
+### Question:
+Who was eliminated a person at 18:48?
+
+### SQL Query:
+"
+19,Who is the incumbent democratic party in district florida 11?,"CREATE TABLE table_1805191_10 (incumbent VARCHAR, party VARCHAR, district VARCHAR)","SELECT incumbent FROM table_1805191_10 WHERE party = ""Democratic"" AND district = ""Florida 11""","### SQL Schema:
+CREATE TABLE table_1805191_10 (incumbent VARCHAR, party VARCHAR, district VARCHAR)
+
+### Question:
+Who is the incumbent democratic party in district florida 11?
+
+### SQL Query:
+"
+20,"Which box score has an Attendance of 54,773?","CREATE TABLE table_name_32 (boxscore VARCHAR, attendance VARCHAR)","SELECT boxscore FROM table_name_32 WHERE attendance = ""54,773""","### SQL Schema:
+CREATE TABLE table_name_32 (boxscore VARCHAR, attendance VARCHAR)
+
+### Question:
+Which box score has an Attendance of 54,773?
+
+### SQL Query:
+"
+21,What is the average decile of Westport South School?,"CREATE TABLE table_name_5 (decile INTEGER, name VARCHAR)","SELECT AVG(decile) FROM table_name_5 WHERE name = ""westport south school""","### SQL Schema:
+CREATE TABLE table_name_5 (decile INTEGER, name VARCHAR)
+
+### Question:
+What is the average decile of Westport South School?
+
+### SQL Query:
+"
+22,How many laps are associated with a time of + 1:39.591?,"CREATE TABLE table_name_37 (laps VARCHAR, time_retired VARCHAR)","SELECT laps FROM table_name_37 WHERE time_retired = ""+ 1:39.591""","### SQL Schema:
+CREATE TABLE table_name_37 (laps VARCHAR, time_retired VARCHAR)
+
+### Question:
+How many laps are associated with a time of + 1:39.591?
+
+### SQL Query:
+"
+23,Count the Pommel Horse that has Rings smaller than 59.85 and a Team Total larger than 361.2?,"CREATE TABLE table_name_6 (pommel_horse INTEGER, rings VARCHAR, team_total VARCHAR)",SELECT SUM(pommel_horse) FROM table_name_6 WHERE rings < 59.85 AND team_total > 361.2,"### SQL Schema:
+CREATE TABLE table_name_6 (pommel_horse INTEGER, rings VARCHAR, team_total VARCHAR)
+
+### Question:
+Count the Pommel Horse that has Rings smaller than 59.85 and a Team Total larger than 361.2?
+
+### SQL Query:
+"
+24,What was the 2011 population of pavliš?,"CREATE TABLE table_2562572_46 (population__2011_ VARCHAR, settlement VARCHAR)","SELECT population__2011_ FROM table_2562572_46 WHERE settlement = ""Pavliš""","### SQL Schema:
+CREATE TABLE table_2562572_46 (population__2011_ VARCHAR, settlement VARCHAR)
+
+### Question:
+What was the 2011 population of pavliš?
+
+### SQL Query:
+"
+25,What are the first name and last name of Linda Smith's advisor?,"CREATE TABLE Student (advisor VARCHAR, fname VARCHAR, lname VARCHAR); CREATE TABLE Faculty (fname VARCHAR, lname VARCHAR, FacID VARCHAR)","SELECT T1.fname, T1.lname FROM Faculty AS T1 JOIN Student AS T2 ON T1.FacID = T2.advisor WHERE T2.fname = ""Linda"" AND T2.lname = ""Smith""","### SQL Schema:
+CREATE TABLE Student (advisor VARCHAR, fname VARCHAR, lname VARCHAR); CREATE TABLE Faculty (fname VARCHAR, lname VARCHAR, FacID VARCHAR)
+
+### Question:
+What are the first name and last name of Linda Smith's advisor?
+
+### SQL Query:
+"
+26,Name the best director for mother,"CREATE TABLE table_15301258_1 (best_director VARCHAR, best_film VARCHAR)","SELECT best_director FROM table_15301258_1 WHERE best_film = ""Mother""","### SQL Schema:
+CREATE TABLE table_15301258_1 (best_director VARCHAR, best_film VARCHAR)
+
+### Question:
+Name the best director for mother
+
+### SQL Query:
+"
+27,What is the Record of the 2012 Hamilton Games from Bahamas?,"CREATE TABLE table_name_72 (record VARCHAR, nationality VARCHAR, games VARCHAR)","SELECT record FROM table_name_72 WHERE nationality = ""bahamas"" AND games = ""2012 hamilton""","### SQL Schema:
+CREATE TABLE table_name_72 (record VARCHAR, nationality VARCHAR, games VARCHAR)
+
+### Question:
+What is the Record of the 2012 Hamilton Games from Bahamas?
+
+### SQL Query:
+"
+28,List the pitchers for the 1970 season,"CREATE TABLE table_19839391_3 (pitcher VARCHAR, seasons VARCHAR)","SELECT pitcher FROM table_19839391_3 WHERE seasons = ""1970""","### SQL Schema:
+CREATE TABLE table_19839391_3 (pitcher VARCHAR, seasons VARCHAR)
+
+### Question:
+List the pitchers for the 1970 season
+
+### SQL Query:
+"
+29,List the possible children per donor levels for countries where the allowed recipients is no data.,"CREATE TABLE table_16175217_1 (children_per_donor VARCHAR, allowed_recipients VARCHAR)","SELECT children_per_donor FROM table_16175217_1 WHERE allowed_recipients = ""no data""","### SQL Schema:
+CREATE TABLE table_16175217_1 (children_per_donor VARCHAR, allowed_recipients VARCHAR)
+
+### Question:
+List the possible children per donor levels for countries where the allowed recipients is no data.
+
+### SQL Query:
+"
+30,How many students are enrolled in the team nicknamed Comets?,"CREATE TABLE table_28243691_2 (enrollment VARCHAR, team_nickname VARCHAR)","SELECT enrollment FROM table_28243691_2 WHERE team_nickname = ""Comets""","### SQL Schema:
+CREATE TABLE table_28243691_2 (enrollment VARCHAR, team_nickname VARCHAR)
+
+### Question:
+How many students are enrolled in the team nicknamed Comets?
+
+### SQL Query:
+"
+31,Where did Michael Eric Bibat win bronze?,"CREATE TABLE table_name_29 (location VARCHAR, bronze VARCHAR)","SELECT location FROM table_name_29 WHERE bronze = ""michael eric bibat""","### SQL Schema:
+CREATE TABLE table_name_29 (location VARCHAR, bronze VARCHAR)
+
+### Question:
+Where did Michael Eric Bibat win bronze?
+
+### SQL Query:
+"
+32,What is the total number of E edges of the polyhedra with vertices V greater than 20?,"CREATE TABLE table_name_32 (edges_e VARCHAR, vertices_v INTEGER)",SELECT COUNT(edges_e) FROM table_name_32 WHERE vertices_v > 20,"### SQL Schema:
+CREATE TABLE table_name_32 (edges_e VARCHAR, vertices_v INTEGER)
+
+### Question:
+What is the total number of E edges of the polyhedra with vertices V greater than 20?
+
+### SQL Query:
+"
+33,"What date has a game smaller than 4, and a score of 116-114?","CREATE TABLE table_name_73 (date VARCHAR, game VARCHAR, score VARCHAR)","SELECT date FROM table_name_73 WHERE game < 4 AND score = ""116-114""","### SQL Schema:
+CREATE TABLE table_name_73 (date VARCHAR, game VARCHAR, score VARCHAR)
+
+### Question:
+What date has a game smaller than 4, and a score of 116-114?
+
+### SQL Query:
+"
+34,"How many games drawn with a Points difference of 31 - 33, and under 4 games lost?","CREATE TABLE table_name_41 (drawn INTEGER, points_difference VARCHAR, lost VARCHAR)","SELECT SUM(drawn) FROM table_name_41 WHERE points_difference = ""31 - 33"" AND lost < 4","### SQL Schema:
+CREATE TABLE table_name_41 (drawn INTEGER, points_difference VARCHAR, lost VARCHAR)
+
+### Question:
+How many games drawn with a Points difference of 31 - 33, and under 4 games lost?
+
+### SQL Query:
+"
+35,What is the density of the place with an area of 1512?,"CREATE TABLE table_2847477_2 (density INTEGER, area VARCHAR)",SELECT MAX(density) FROM table_2847477_2 WHERE area = 1512,"### SQL Schema:
+CREATE TABLE table_2847477_2 (density INTEGER, area VARCHAR)
+
+### Question:
+What is the density of the place with an area of 1512?
+
+### SQL Query:
+"
+36,What is the Latin motto of the sign that translates to spouse?,"CREATE TABLE table_name_94 (latin_motto VARCHAR, translation VARCHAR)","SELECT latin_motto FROM table_name_94 WHERE translation = ""spouse""","### SQL Schema:
+CREATE TABLE table_name_94 (latin_motto VARCHAR, translation VARCHAR)
+
+### Question:
+What is the Latin motto of the sign that translates to spouse?
+
+### SQL Query:
+"
+37,What is the number for the player that has a k position?,"CREATE TABLE table_name_77 (number VARCHAR, position VARCHAR)","SELECT number FROM table_name_77 WHERE position = ""k""","### SQL Schema:
+CREATE TABLE table_name_77 (number VARCHAR, position VARCHAR)
+
+### Question:
+What is the number for the player that has a k position?
+
+### SQL Query:
+"
+38,When's the release date of the model with part number adh485biaa5do? ,"CREATE TABLE table_13869651_3 (release_date VARCHAR, part_number_s_ VARCHAR)","SELECT release_date FROM table_13869651_3 WHERE part_number_s_ = ""ADH485BIAA5DO""","### SQL Schema:
+CREATE TABLE table_13869651_3 (release_date VARCHAR, part_number_s_ VARCHAR)
+
+### Question:
+When's the release date of the model with part number adh485biaa5do? 
+
+### SQL Query:
+"
+39,What year had the Chassis of march 762 and more than 0 points?,"CREATE TABLE table_name_64 (year VARCHAR, chassis VARCHAR, points VARCHAR)","SELECT COUNT(year) FROM table_name_64 WHERE chassis = ""march 762"" AND points > 0","### SQL Schema:
+CREATE TABLE table_name_64 (year VARCHAR, chassis VARCHAR, points VARCHAR)
+
+### Question:
+What year had the Chassis of march 762 and more than 0 points?
+
+### SQL Query:
+"
+40,What Singapore League Cup does Masahiro Fukasawa have?,"CREATE TABLE table_name_99 (singapore_league_cup VARCHAR, name VARCHAR)","SELECT singapore_league_cup FROM table_name_99 WHERE name = ""masahiro fukasawa""","### SQL Schema:
+CREATE TABLE table_name_99 (singapore_league_cup VARCHAR, name VARCHAR)
+
+### Question:
+What Singapore League Cup does Masahiro Fukasawa have?
+
+### SQL Query:
+"
+41,What is the maximum points received when Peeter Vähl gave a 9?,"CREATE TABLE table_29261215_4 (points INTEGER, peeter_vähi VARCHAR)",SELECT MIN(points) FROM table_29261215_4 WHERE peeter_vähi = 9,"### SQL Schema:
+CREATE TABLE table_29261215_4 (points INTEGER, peeter_vähi VARCHAR)
+
+### Question:
+What is the maximum points received when Peeter Vähl gave a 9?
+
+### SQL Query:
+"
+42,what is the total when the league is less than 1?,"CREATE TABLE table_name_89 (total VARCHAR, league INTEGER)",SELECT total FROM table_name_89 WHERE league < 1,"### SQL Schema:
+CREATE TABLE table_name_89 (total VARCHAR, league INTEGER)
+
+### Question:
+what is the total when the league is less than 1?
+
+### SQL Query:
+"
+43,Tell me the sum of losses for wins less than 2 and rank of 10 with appearances larger than 3,"CREATE TABLE table_name_60 (losses INTEGER, appearances VARCHAR, wins VARCHAR, rank VARCHAR)",SELECT SUM(losses) FROM table_name_60 WHERE wins < 2 AND rank = 10 AND appearances > 3,"### SQL Schema:
+CREATE TABLE table_name_60 (losses INTEGER, appearances VARCHAR, wins VARCHAR, rank VARCHAR)
+
+### Question:
+Tell me the sum of losses for wins less than 2 and rank of 10 with appearances larger than 3
+
+### SQL Query:
+"
+44,What was the first year that South Korea won gold and Malaysia won bronze?,"CREATE TABLE table_name_74 (year INTEGER, gold VARCHAR, bronze VARCHAR)","SELECT MIN(year) FROM table_name_74 WHERE gold = ""south korea"" AND bronze = ""malaysia""","### SQL Schema:
+CREATE TABLE table_name_74 (year INTEGER, gold VARCHAR, bronze VARCHAR)
+
+### Question:
+What was the first year that South Korea won gold and Malaysia won bronze?
+
+### SQL Query:
+"
+45,"If the rank is 11, what is the total amount?","CREATE TABLE table_21995420_9 (total VARCHAR, rank VARCHAR)",SELECT total FROM table_21995420_9 WHERE rank = 11,"### SQL Schema:
+CREATE TABLE table_21995420_9 (total VARCHAR, rank VARCHAR)
+
+### Question:
+If the rank is 11, what is the total amount?
+
+### SQL Query:
+"
+46,Name the number of celebrity for athlete,"CREATE TABLE table_14345690_4 (celebrity VARCHAR, famous_for VARCHAR)","SELECT COUNT(celebrity) FROM table_14345690_4 WHERE famous_for = ""Athlete""","### SQL Schema:
+CREATE TABLE table_14345690_4 (celebrity VARCHAR, famous_for VARCHAR)
+
+### Question:
+Name the number of celebrity for athlete
+
+### SQL Query:
+"
+47,What Money (£) has a Country of ireland?,"CREATE TABLE table_name_96 (money___£__ VARCHAR, country VARCHAR)","SELECT money___£__ FROM table_name_96 WHERE country = ""ireland""","### SQL Schema:
+CREATE TABLE table_name_96 (money___£__ VARCHAR, country VARCHAR)
+
+### Question:
+What Money (£) has a Country of ireland?
+
+### SQL Query:
+"
+48,What shows for series 4 when the seat shows 1?,"CREATE TABLE table_name_27 (series_4 VARCHAR, seat VARCHAR)",SELECT series_4 FROM table_name_27 WHERE seat = 1,"### SQL Schema:
+CREATE TABLE table_name_27 (series_4 VARCHAR, seat VARCHAR)
+
+### Question:
+What shows for series 4 when the seat shows 1?
+
+### SQL Query:
+"
+49,"How many numbers were recorded under revenue when revenue per capita was $6,126?","CREATE TABLE table_14700336_1 (revenue__millions_ VARCHAR, revenue_per_capita VARCHAR)","SELECT COUNT(revenue__millions_) FROM table_14700336_1 WHERE revenue_per_capita = ""$6,126""","### SQL Schema:
+CREATE TABLE table_14700336_1 (revenue__millions_ VARCHAR, revenue_per_capita VARCHAR)
+
+### Question:
+How many numbers were recorded under revenue when revenue per capita was $6,126?
+
+### SQL Query:
+"

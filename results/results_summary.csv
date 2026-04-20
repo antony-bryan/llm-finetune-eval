@@ -1,0 +1,4 @@
+Model,LR,Exact Match,ROUGE-L,Δ vs Base
+Phi-2 Base,—,2.0%,0.8852,—
+Phi-2 + LoRA (Run 1),2e-4,76.0%,0.9900,+74.0pp
+Phi-2 + LoRA (Run 2),5e-4,70.0%,0.9824,+68.0pp
