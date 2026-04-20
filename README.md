@@ -38,26 +38,31 @@ Fine-tuning produced zero regressions — every query the base model answered co
 
 **Example:**
 
-Question: Who is the h.h. principal with Jim Haught as h.s. principal?
-Base:   SELECT hh_principal, wr_principal, hs_principal, maplemere_principal
-FT:     SELECT hh_principal FROM table_name_55 WHERE hs_principal = "jim haught" ...
-GT:     SELECT hh_principal FROM table_name_55 WHERE hs_principal = "jim haught" ...
+> **Question:** Who is the h.h. principal with Jim Haught as h.s. principal?
+>
+> **Base:** `SELECT hh_principal, wr_principal, hs_principal, maplemere_principal`
+>
+> **Fine-tuned:** `SELECT hh_principal FROM table_name_55 WHERE hs_principal = "jim haught" ...`
+>
+> **Ground truth:** `SELECT hh_principal FROM table_name_55 WHERE hs_principal = "jim haught" ...`
 
 ## Repo Structure
 
+```
 llm-finetune-eval/
 ├── README.md
 ├── requirements.txt
 ├── notebooks/
-│   └── phi2-sql-finetune.ipynb    # Full pipeline: baseline → training → evaluation
+│   └── phi2-sql-finetune.ipynb
 ├── results/
-│   ├── baseline_results.csv       # Base model predictions (2% EM)
-│   ├── predictions_base.csv       # Base model on 50-sample test set
-│   ├── predictions_run1.csv       # Run 1 predictions (76% EM)
-│   ├── predictions_run2.csv       # Run 2 predictions (70% EM)
-│   ├── results_summary.csv        # Final comparison table
+│   ├── baseline_results.csv
+│   ├── predictions_base.csv
+│   ├── predictions_run1.csv
+│   ├── predictions_run2.csv
+│   ├── results_summary.csv
 │   └── charts/
-│       └── results_comparison.png # Bar chart: EM and ROUGE-L comparison
+│       └── results_comparison.png
+```
 
 ## Training Details
 
@@ -78,9 +83,11 @@ llm-finetune-eval/
 
 ## Environment
 
-transformers==5.0.0
-peft==0.18.1
-trl==1.2.0
-bitsandbytes==0.49.2
+| Library | Version |
+|---|---|
+| transformers | 5.0.0 |
+| peft | 0.18.1 |
+| trl | 1.2.0 |
+| bitsandbytes | 0.49.2 |
 
 Trained on Kaggle free tier (T4 x2, CUDA 12.8, Python 3.12).
